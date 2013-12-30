@@ -1,0 +1,194 @@
+#player {
+	position: relative;
+	width: 75%;
+	height: 200px;
+	background: lightblue;
+	border: 1px solid black;
+	display: inline-block;
+	border-radius: 10px;
+}
+
+#nowPlaying {
+	position: relative;
+	padding: 10px;
+	width: 300px;
+	left: 200px;
+	margin: 0px;
+}
+
+#seekWrapper {
+	position:absolute;
+	top:70px;
+	left: 0px;
+	
+}
+
+#playerBox {
+	position:relative;
+	padding: 5px;
+}
+
+#playlist {
+	position: absolute;
+	right: 0px;
+	top: 0px;
+}
+
+#playlist ul, #videoPlaylist {
+	margin: 0px;
+	padding: 0px;
+}
+
+#playlist ul li, #videoPlaylist li {
+	list-style-type:none;
+	margin-top: 30px;
+}
+
+#playlist ul li a:hover, #videoPlaylist li a:hover {
+	background: #efefef;
+}
+
+#playlist ul li a, #videoPlaylist li a {
+	text-decoration: none;
+	padding: 10px;
+	background: #FFF;
+	border-radius: 10px;
+	border: 1px solid #000;
+	box-shadow: 0px 2px 5px #000;
+	font-size: 1.5em;
+	color: #008192;
+}
+
+#playlist ul li a::after, #videoPlaylist li a {
+	content: " >"
+}
+
+.trackTitle {
+	font-size: 2em;
+	font-weight: bold;
+}
+
+.trackDescription {
+	/* apparent Firefox problem? fixed by BR in html
+	 float:left; */
+	
+	padding: 5px;
+	font-style: italic;
+	font-size: 1.1em;
+}
+
+.control {
+	width: 45px;
+	height: 45px;
+	border-radius: 50%;
+	background: white;
+	box-shadow: 0px 0px 4px black, inset 0px 0px 2px black;
+}
+
+.play {
+	position: absolute;
+	left: 30px;
+	top: 10px;
+}
+
+.stop {
+	position: absolute;
+	left: 100px;
+	top: 10px;
+}
+
+.currTime {
+	position: absolute;
+	top: 55px;
+	left: 7px;
+}
+
+.durTime {
+	position: absolute;
+	top: 55px;
+	left: 140px;
+}
+
+.arrow {
+	width: 0px;
+	height: 0px;
+	border-top: 10px solid transparent;
+	border-bottom: 10px solid transparent;
+	border-left: 19px solid black;
+	position: absolute;
+	top: 12px;
+	left: 15px;
+}
+
+.square {
+	height: 19px;
+	width: 19px;
+	background: black;
+	position: absolute;
+	top: 13px;
+	left: 13px;
+}
+
+.pause {
+	position: absolute;
+	font-size: 4em;
+	color: black;
+	left: 10px;
+	font-family: "ms sans serif";
+}
+
+.pause:after {
+	content: "\"";
+}
+
+.control:hover {
+	box-shadow: 0px 0px 4px, inset 0px 0px 6px;
+}
+
+.control:hover .arrow {
+	width: 0px;
+	height: 0px;
+	border-top: 10px solid transparent;
+	border-bottom: 10px solid transparent;
+	border-left: 18px solid black;
+	top: 13px;
+	left: 16px;
+}
+
+.control:hover .square {
+	height: 18px;
+	width: 18px;
+	top: 14px;
+	left: 14px;
+}
+
+.control:hover .pause {
+	font-size: 3.9em;
+}
+
+.control:active  {
+	box-shadow: 0px 0px 3px #09CC76, inset 0px 0px 4px #09CC66;
+	border: 1px solid #00CC00;
+}
+
+.progressBar {
+	position: relative;
+	width: 166px;
+	height: 13px;
+	background: rgb(216,216,216);
+	margin: 8px;
+	border-radius: 7px;
+	box-shadow: 0px 1px 4px rgb(37,34,34), inset 0px 0px 6px white;
+	cursor: pointer;
+}
+
+.meterValue {
+	position: absolute;
+	top: 1px;
+	left: 0px;
+	height: 11px;
+	background: rgb(119,211,137);
+	border-radius: inherit;
+	box-shadow: 0px 0px 2px black;
+	width: 15px;
+}

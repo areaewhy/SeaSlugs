@@ -1,0 +1,144 @@
+<!DOCTYPE HTML>
+<head>
+<link href="style.css?v3" rel="stylesheet" type="text/css" />
+<script src="script.js"></script>
+<script src="audioplayer/player.js"></script>
+<script src="audioplayer/playlist.js"></script>
+<meta name="viewport" content="width=device-width">
+</head>
+<title>SeaSlugs</title>
+<html>
+	<body>
+	<div id="wrapper">
+	<input type="checkbox" id="toggler">
+	<div id="nav">
+	<a href="javascript:void(0)" onclick="show('home');">Home</a>
+	<a href="javascript:void(0)" onClick="show('musicians');">Musicians</a>
+	<a href="javascript:void(0)" onclick="show('events');">Events</a>
+	<a href="javascript:void(0)" onclick="show('contact');">Contact</a>
+	<a href="javascript:void(0)" onclick="show('link');">Links</a>
+	<a href="javascript:void(0)" onclick="show('media'); compatiblePlayer();">Media</a>
+	<label class="menuToggle" for="toggler">Menu</label>
+	</div>
+		<div id="header">
+			<img src="images/seaslugs2.gif" alt="Sea Slugs" loop="-1">
+		</div>
+		<div id="content">
+			<div class="top">
+				<div id="home">
+					<p>The Sea Slugs are a small dance orchestra that specializes in playing for family dances, which are taught by an expert caller. </p>
+					<p>The music performed on fiddles, accordions, flute, guitar, mandolin, and string bass, is deeply rooted in styles popular in southern Maine for generations: Franco-American, reels, Irish jigs, and early Anglo-American dance music. Our caller teaches contrdances, waltzes, polkas, and even an occasional tango to dancers of all levels of experience.</p> 
+					<p>The Slugs have been performing steadily throughout southern Maine for twenty years. The group is ideal for a wide range of public and private events, including family gatherings, public events and corporate functions. Several of the slugs are teachers and the group is skilled at conducting school workshops in folk dancing and music performance.</p>
+				
+				<div class="bottom">
+					<img src="images/fest1.jpg" height="200px" alt="pic1" >
+					<img src="images/fest2.jpg" height="200px" alt="pic1" >
+					<img src="images/fest3.jpg" height="200px" alt="pic1" >
+					<img src="images/fest4.jpg" height="200px" alt="pic1" >				
+				</div>
+				</div>
+			<div id="musicians" style="display: none;">
+					<table>
+						<thead style="font-weight: bold; font-size: 1.4em;background: rgba(240, 240, 240,1.5);">
+							<tr><td>Member</td><td>Instrument</td></tr>
+						</thead>
+						<tbody>
+							<tr><td>Reggie Osborne</td><td>Caller</td></tr>
+							<tr><td>John Capizzo</td><td>Guitar, Mandolin</td></tr>
+							<tr><td>Bob Foster</td><td>Guitar</td></tr>
+							<tr><td>Steve Ryder</td><td>Guitar</td></tr>
+							<tr><td>Connie Glende</td><td>Fiddle</td></tr>
+							<tr><td>Marianne Warner</td><td>Flute, Whistles, Accordion</td></tr>
+						</tbody>
+					</table>
+			</div>
+			<div id="events" style="display: none">
+			<!-- To add another event, copy one of these sections -- from <p> to </p>
+				then update the eTitle (event title), eLocation (event location), and eDate (event date) !-->
+				<p>
+					<span class="eTitle">Down East Country Dance Festival </span>
+					<span class="eLocation">in Topsham Maine</span>
+					<span class="eDate"></span>
+				</p>
+				<p>
+					<span class="eTitle">Octoberfest </span>
+					<span class="eLocation">in Bath Maine </span> 
+					<span class="eDate">Oct 20th 2013</span>
+				</p>
+				<p>
+					<span class="eTitle">Applefest at Maine Audubon </span>
+					<span class="eLocation"> in Falmouth Maine</span>
+					<span class="eDate">Oct 5th 2013 </span>
+				</p>
+				<p>    
+					<span class="eTitle">Music Party </span>
+					<span class="eLocation">At Curtis Memorial Library, Brunswick Maine</span>
+					<span class="eDate">November 16th</span>
+				</p>			
+				<!-- This is where you change the Last Updated !-->
+				<p><span class="notice">Last UPDATED: October 2013 </span></p>
+				<div class="bottom">
+					<img src="images/reggie_louise.jpg" height="200px" alt="pic1" >
+					<img src="images/dancers.jpg" height="200px" alt="pic1" >
+					<img src="images/mike%20and%20phil.jpg" height="200px" alt="pic1" >
+				</div>
+			</div>
+			<div id="contact" style="display: none">
+					<table>
+						<tr>
+							<td>Email</td>
+							<td><a href="mailto:sea_slugs@hotmail.com">sea_slugs@hotmail.com</a></td>
+						</tr>
+						<tr>
+							<td>Snail Mail</td>
+							<td><b>Sea Slugs</b> <br/> 4 Bickford St. <br/> Scarborough, ME <br/> 04074 </td>
+						</tr>
+						<tr>
+							<td>Phone</td>
+							<td>(207)-883-7119</td>
+						</tr>
+						<tr>
+							<td>AIM</td>
+							<td>jjcapizzo</td>
+						</tr>
+					</table>
+			</div>
+			<div id="link" style="display: none">
+				<table>
+					<tr>
+						<td><a href="http://www.sjryder.com" target="_blank">Ryder Guitars</a></td>
+						<td>Hand-made electric mandolins and guitars</td>
+					</tr>
+					<tr>
+						<td><a href="http://www.deffa.org" target="_blank">Maine Music</a></td>
+						<td>DEFFA Guide to Maine Folkdance, Music, and Song</td>
+					</tr>
+					<tr>
+						<td><a href="http://www.momshomecookin.com" target="_blank">Mom's Home Cookin'</a></td>
+						<td>Just like Mama used to sing</td>
+					</tr>
+					<tr>
+						<td><a href="http://www.daytonfolkdance.com/whatis.html" target="_blank">Definition</a></td>
+						<td>Definition of Contradance</td>
+					</tr>
+				</table>
+			</div>
+			<div id="media" style="display: none">
+			<p> <span class="Media">Audio</span></p>
+			<div id="video" class="bottom">
+			<p> <span class="Media">Videos</span> </p>
+			<!-- Vimeo embed!-->
+				<div id="embedding">
+				<iframe src="//player.vimeo.com/video/78447503" width="500" height="283" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> 
+				</div>
+				<ul id="videoPlaylist">
+				<li><a href="javascript:void(0);" onclick="load(0)">Westfalia Waltz</a></li>
+				<li><a href="javascript:void(0);" onclick="load(1)">Mazurka's</a></li>
+				</ul>
+			</div>
+			</div>
+		</div>
+	</div>
+	<div id="footer"> <span>You are one of many who has visited this site:</span><span> <ISML TYPE="counter" OPTION="graphic_7seg"> </span></div>
+	</body>
+</html>
